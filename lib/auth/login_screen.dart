@@ -15,10 +15,14 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Center(
           child: Column(
             children: <Widget>[
+              const SizedBox(
+                height: 100,
+              ),
               Image.asset(
                 'assets/images/tiktok.png',
                 width: 200,
               ),
+              const Text('Welcome'),
             ],
           ),
         ),
