@@ -7,7 +7,13 @@ class InputTextWidget extends StatelessWidget {
   final String labelString;
   final bool isObscure;
 
-  const InputTextWidget({super.key});
+  const InputTextWidget(
+      {required this.textEditingController,
+      this.iconData,
+      this.assetReference,
+      required this.labelString,
+      required this.isObscure,
+      super.key});
 
   @override
   Widget build(BuildContext context) {
