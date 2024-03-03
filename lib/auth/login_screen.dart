@@ -43,8 +43,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   fontSize: 34,
                   color: Colors.grey,
                 ),
+              ),
 
-                // EMAIL INPUT FIELD
+              // EMAIL INPUT FIELD
+              InputFieldWidget(
+                textEditingController: emailTextEditingController,
+                labelString: 'Email',
+                iconData: Icons.email_outlined,
+                isObscure: false,
               ),
             ],
           ),
