@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:practice_app_4/widgets/input_field_widget.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -39,7 +41,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
 
                 // EMAIL INPUT FIELD
-
               ),
             ],
           ),
