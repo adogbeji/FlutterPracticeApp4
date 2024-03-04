@@ -21,7 +21,13 @@ class InputFieldWidget extends StatelessWidget {
       controller: textEditingController,
       decoration: InputDecoration(
         labelText: labelString,
-        prefixIcon: iconData != null ? Icon(iconData): Image.asset(assetReference!)
+        prefixIcon: iconData != null ? Icon(iconData): Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset(assetReference!, width: 10),
+        ),
+        labelStyle: const TextStyle(
+          fontSize: 18,
+        ),
       ),
       obscureText: isObscure,
     );
