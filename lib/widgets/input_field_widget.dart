@@ -34,6 +34,12 @@ class InputFieldWidget extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(6),
         ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: const BorderSide(
+            color: Colors.purpleAccent,
+          ),
+          borderRadius: BorderRadius.circular(6),
+        ),
       ),
       obscureText: isObscure,
     );
