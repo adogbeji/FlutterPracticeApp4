@@ -45,12 +45,24 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
 
+              const SizedBox(
+                height: 15,
+              ),
+
               // EMAIL INPUT FIELD
               InputFieldWidget(
                 textEditingController: emailTextEditingController,
                 labelString: 'Email',
                 iconData: Icons.email_outlined,
                 isObscure: false,
+              ),
+
+              // PASSWORD INPUT FIELD
+              InputFieldWidget(
+                textEditingController: passwordTextEditingController,
+                labelString: 'Password',
+                iconData: Icons.lock,
+                isObscure: true,
               ),
             ],
           ),
