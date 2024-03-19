@@ -14,6 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
   // Email & password Controllers
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
+  bool showProgressBar = false;
 
   @override
   Widget build(BuildContext context) {
@@ -80,6 +81,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   isObscure: true,
                 ),
               ),
+
+              // LOGIN BUTTON
+              showProgressBar == false ? const Column() : Container(),
             ],
           ),
         ),
