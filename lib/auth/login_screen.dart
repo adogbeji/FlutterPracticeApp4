@@ -12,10 +12,12 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Image.asset('assets/images/tiktok.png', width: 200,),
-          ],
+        child: Center(
+          child: Column(
+            children: [
+              Image.asset('assets/images/tiktok.png', width: 200,),
+            ],
+          ),
         ),
       ),
     );
