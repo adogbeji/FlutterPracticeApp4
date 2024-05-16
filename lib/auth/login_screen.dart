@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+
+import 'package:practice_app_4/widgets/input_text_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -23,6 +26,12 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 100,
               ),
+
+              Image.asset(
+                'assets/images/tiktok.png',
+                width: 200,
+              ),
+
               Text(
                 'Welcome',
                 style: GoogleFonts.acme(
@@ -31,9 +40,19 @@ class _LoginScreenState extends State<LoginScreen> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Image.asset(
-                'assets/images/tiktok.png',
-                width: 200,
+              Text(
+                'Glad To See You',
+                style: GoogleFonts.acme(
+                  fontSize: 34,
+                  color: Colors.grey,
+                ),
+              ),
+              
+              InputTextWidget(
+                textEditingController: emailTextEditingController,
+                labelString: 'Email',
+                iconData: Icons.email,
+                isObscure: false,
               ),
             ],
           ),
