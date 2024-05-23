@@ -29,6 +29,18 @@ class InputTextWidget extends StatelessWidget {
         labelStyle: const TextStyle(
           fontSize: 18,
         ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: const BorderSide(
+            color: Colors.grey,
+          ),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: const BorderSide(
+            color: Colors.grey,
+          ),
+          borderRadius: BorderRadius.circular(6),
+        ),
       ),
     );
   }
