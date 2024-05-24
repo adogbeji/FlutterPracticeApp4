@@ -42,6 +42,7 @@ class InputTextWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(6),
         ),
       ),
+      obscureText: isObscure,
     );
   }
 }
