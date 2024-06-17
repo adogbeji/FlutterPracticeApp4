@@ -15,6 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
   // EMAIL & PASSWORD CONTROLLERS
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
+  bool showProgressBar = false;
 
   @override
   Widget build(BuildContext context) {
@@ -47,11 +48,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: Colors.grey,
                 ),
               ),
-              
+
               // EMAIL INPUT FIELD
               Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.symmetric(horizontal: 20,),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                ),
                 child: InputTextWidget(
                   textEditingController: emailTextEditingController,
                   labelString: 'Email',
@@ -60,12 +63,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
 
-              const SizedBox(height: 25,),
+              const SizedBox(
+                height: 25,
+              ),
 
               // PASSWORD INPUT FIELD
               Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.symmetric(horizontal: 20,),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                ),
                 child: InputTextWidget(
                   textEditingController: passwordTextEditingController,
                   labelString: 'Password',
@@ -73,6 +80,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   isObscure: true,
                 ),
               ),
+
+              const SizedBox(
+                height: 30,
+              ),
+
+              showProgressBar == false ? Column() : Container(),
             ],
           ),
         ),
