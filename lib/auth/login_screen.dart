@@ -85,20 +85,35 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 30,
               ),
 
-              showProgressBar == false ? Column(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 54,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10),
-                      ),
-                    ),
-                  ),
-                ],
-              ) : Container(),
+              showProgressBar == false
+                  ? Column(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 54,
+                          decoration: const BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(10),
+                            ),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            child: const Center(
+                              child: Text(
+                                'Log In',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  : Container(),
             ],
           ),
         ),
